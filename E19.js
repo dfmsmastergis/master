@@ -6,4 +6,6 @@ for (var i of topics) {
 };
 
 inverso.reverse();
-document.write(inverso);
+
+console.log(inverso);
+alert(inverso);

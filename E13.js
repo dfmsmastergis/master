@@ -18,5 +18,7 @@ let multi = a * b;
 let div = a / b;
 let mod = a % b;
 
-document.write("\n. Suma=" + suma + ", Resta=" + resta + ", Multip=" + multi + ", Divis=" + div + ", Resto=" + mod);
+console.log("\n. Suma=" + suma + ", Resta=" + resta + ", Multiplicación=" + multi + ", División=" + div + ", Resto=" + mod);
+alert("Suma=" + suma + "\nResta=" + resta + "\nMultip=" + multi + "\nDivis=" + div + "\nResto=" + mod);
+//document.write("\n. Suma=" + suma + ", Resta=" + resta + ", Multip=" + multi + ", Divis=" + div + ", Resto=" + mod);
 

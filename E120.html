@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<meta charset="utf-8">
+		<title>Ejercicios Javascript DFMS</title>
+		
+		<script> 
+			function colorear(x) {
+				document.getElementById(x).style.background = "yellow";
+			}
+			
+			function quitar(x) {
+				document.getElementById(x).style.background = "white";
+			}
+			
+			function intercambiar(x) {
+				const vocales = ["a", "e", "i", "o", "u"];
+				let contenido = document.getElementById(x).value;
+				let letra = contenido.charAt(0);
+				
+				if (letra !== "") {
+					if (vocales.includes(letra) == true) {
+						document.getElementById(x).style.background = "yellow";
+					} else {
+						document.getElementById(x).style.background = "green";
+					}
+				} else {
+					document.getElementById(x).style.background = "white";
+				}
+			}
+		</script>
+		
+	</head>
+	<body>	
+		<h1>Eventos</h1>
+		<p>Haz que cuando se haga click sobre el botón “Guardar”, salté un alert con un mensaje de guardado.</p>
+		<button onClick=alert("Guardado");>Guardar</button>
+		<br>
+		<br>
+		<p>Cuando hagamos foco sobre este input se pondrá de color amarillo y cuando se lo quitemos cambiará de color</p>
+		<label>Nombre</label>
+		<input type=”text” id="1" onfocus="colorear(this.id);" onFocusout="quitar(this.id);" />
+		<br>
+		<br>
+		<p>Dependiendo si escribamos una vocal o una consonante el contenido del input aparecerá de distinto color</p>
+		<label>Escribe una letra</label>
+		<input type=”text” id="2" onInput="intercambiar(this.id);"/>
+	</body>
+</html>

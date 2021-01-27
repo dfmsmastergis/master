@@ -15,7 +15,10 @@ for (let i = 0; i < users.length; i++) {
 	}
 };
 
-document.write(frases);
+//document.write(frases);
+//alert("Premium: " + frases);
 
 let nopremium = users.filter(user => user.premium == false);
-console.log(frases);
+console.log(nopremium);
+
+alert("Premium: " + frases + "\n*Los no premium salen por console.log*");

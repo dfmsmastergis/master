@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<meta charset="utf-8">
+		<title>Ejercicios Javascript DFMS</title>
+		
+		<script language='JavaScript'>
+		
+			function verEjercicio() {
+				let id = document.formulario.ejercicio.selectedIndex;
+				let ejer = document.formulario.ejercicio[id].value;
+				if (ejer != 0) {	
+					switch ( parseInt(ejer) ) {
+						case 2: loadJS("E12.js"); break;
+						case 3: loadJS("E13.js"); break;
+						case 4: loadJS("E14.js"); break;
+						case 5: loadJS("E15.js"); break;
+						case 6: loadJS("E16.js"); break;
+						case 7: loadJS("E17.js"); break;
+						case 8: loadJS("E18.js"); break;
+						case 9: loadJS("E19.js"); break;
+						case 10: loadJS("E110.js"); break;
+						case 11: loadJS("E111.js"); break;
+						case 12: loadJS("E112.js"); break;
+						case 13: loadJS("E113.js"); break;
+						case 14: loadJS("E114.js"); break;
+						case 15: loadJS("E115.js"); break;
+						case 16: loadJS("E116.js"); break;
+						case 17: loadJS("E117.js"); break;
+						case 18: viewHTML("E118.html"); break;
+						case 19: viewHTML("E119.html"); break;
+						case 20: viewHTML("E120.html"); break;
+						case 21: viewHTML("E121.html"); break;
+					};
+				};
+			}
+			
+			function loadJS( fichero ) {
+				var d=document, h=d.getElementsByTagName('head')[0], newScript;
+				try {
+					h.removeChild(d.getElementById('lib_lang'));
+				} catch (e) {}
+				
+				newScript = d.createElement('script');
+				newScript.id = 'lib_lang';
+				newScript.type = 'text/javascript';
+				newScript.src = fichero; 
+				h.appendChild(newScript);
+			};
+			
+			function viewHTML( fichero ) {
+				window.open(fichero);
+			};
+			
+		</script> 
+
+	</head>
+	<body>
+		<form name="formulario" size="1" onChange='verEjercicio(this.form)'>
+			<p>
+			Si al cargar algún ejercicio no aparece la solución, volver a recargar la página, y volver a seleccionar el ejercicio.
+			</p>
+			<select name="ejercicio">
+				<option selected>Elegir un ejercicio para ver...</option> 
+				<option value=2>Ejercicio 1.2</option>
+				<option value=3>Ejercicio 1.3</option>
+				<option value=4>Ejercicio 1.4</option>
+				<option value=5>Ejercicio 1.5</option>
+				<option value=6>Ejercicio 1.6</option>
+				<option value=7>Ejercicio 1.7</option>
+				<option value=8>Ejercicio 1.8</option>
+				<option value=9>Ejercicio 1.9</option>
+				<option value=10>Ejercicio 1.10</option>
+				<option value=11>Ejercicio 1.11</option>
+				<option value=12>Ejercicio 1.12</option>
+				<option value=13>Ejercicio 1.13</option>
+				<option value=14>Ejercicio 1.14</option>
+				<option value=15>Ejercicio 1.15</option>
+				<option value=16>Ejercicio 1.16</option>
+				<option value=17>Ejercicio 1.17</option>
+				<option value=18>Ejercicio 1.18</option>
+				<option value=19>Ejercicio 1.19</option>
+				<option value=20>Ejercicio 1.20</option>
+				<option value=21>Ejercicio 1.21</option>
+			</select>
+		</form>
+	</body>
+</html>

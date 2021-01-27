@@ -11,4 +11,4 @@ for (let i = 1; i < words.length; i++) {
 	};
 };
 
-document.write(words[id]);
+alert("La palabra mas larga es: " + words[id] + " de {" + words + "}");

@@ -1,4 +1,4 @@
-var texto = prompt();
+var texto = prompt("Comprobar texto Mayúscula-Minúscula-Ambas");
 
 function check(cadena) {
 	if (cadena == cadena.toUpperCase()) {

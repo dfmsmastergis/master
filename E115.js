@@ -15,4 +15,5 @@ let tiempo = scores.reduce((time, actual) => {
 
 
 let campeona = scores.filter(atleta => atleta.time == tiempo);
+alert("*La campeona sale por console.log*");
 console.log(campeona);

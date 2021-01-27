@@ -10,6 +10,8 @@ for (let i = 0; i < meses.length; i++) {
 	};
 };
 
+alert("Meses con siete letras o más: {" + siete + "}\nHay " + num);
+/*
 document.write(siete);
 document.write("<p>");
-document.write("Hay " + num);
+document.write("Hay " + num);*/

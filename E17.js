@@ -1,4 +1,4 @@
-let n = parseInt(prompt());
+let n = parseInt(prompt("Escribir un número para ver si es PAR o IMPAR"));
 
 function checkNumber(num) {
 	if (num % 2 == 0) {

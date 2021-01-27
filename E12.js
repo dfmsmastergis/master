@@ -9,5 +9,5 @@ let pos = meses.indexOf("Enero");
 let mes = meses[pos + 1];
 
 console.log(nac);
-console.log(mes)
+console.log(mes);
 alert(nac + ". Mes siguente; " + mes);
